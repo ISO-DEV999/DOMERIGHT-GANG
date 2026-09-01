@@ -256,6 +256,8 @@ export default function HomePage() {
                 <label>
                   <span>Username</span>
                   <input
+                    id="signupUsername"
+                    name="username"
                     value={form.username}
                     onChange={(event) => setForm({ ...form, username: event.target.value })}
                     placeholder="Username"
@@ -265,6 +267,8 @@ export default function HomePage() {
                 <label>
                   <span>Password IC</span>
                   <input
+                    id="signupPassword"
+                    name="password"
                     type="password"
                     value={form.password}
                     onChange={(event) => setForm({ ...form, password: event.target.value })}
@@ -275,6 +279,8 @@ export default function HomePage() {
                 <label>
                   <span>ชื่อ IC</span>
                   <input
+                    id="signupFirstName"
+                    name="firstName"
                     value={form.firstName}
                     onChange={(event) => setForm({ ...form, firstName: event.target.value })}
                     placeholder="ชื่อ IC"
@@ -284,6 +290,8 @@ export default function HomePage() {
                 <label>
                   <span>นามสกุล IC</span>
                   <input
+                    id="signupLastName"
+                    name="lastName"
                     value={form.lastName}
                     onChange={(event) => setForm({ ...form, lastName: event.target.value })}
                     placeholder="นามสกุล IC"
@@ -293,6 +301,8 @@ export default function HomePage() {
                 <label>
                   <span>เบอร์โทร</span>
                   <input
+                    id="signupPhone"
+                    name="phone"
                     value={form.phone}
                     onChange={(event) => setForm({ ...form, phone: event.target.value })}
                     placeholder="เบอร์โทร"
@@ -302,6 +312,8 @@ export default function HomePage() {
                 <label>
                   <span>อายุ OC</span>
                   <input
+                    id="signupAge"
+                    name="age"
                     value={form.age}
                     onChange={(event) => setForm({ ...form, age: event.target.value })}
                     placeholder="อายุ OC"
@@ -311,6 +323,8 @@ export default function HomePage() {
                 <label>
                   <span>สถานะ</span>
                   <select
+                    id="relationshipStatus"
+                    name="relationshipStatus"
                     value={form.relationshipStatus}
                     onChange={(event) => setForm({ ...form, relationshipStatus: event.target.value })}
                   >
@@ -333,6 +347,8 @@ export default function HomePage() {
               <label>
                 <span>Username</span>
                 <input
+                  id="loginUsername"
+                  name="username"
                   value={loginData.username}
                   onChange={(event) => setLoginData({ ...loginData, username: event.target.value })}
                   placeholder="Username"
@@ -342,6 +358,8 @@ export default function HomePage() {
               <label>
                 <span>Password</span>
                 <input
+                  id="loginPassword"
+                  name="password"
                   type="password"
                   value={loginData.password}
                   onChange={(event) => setLoginData({ ...loginData, password: event.target.value })}

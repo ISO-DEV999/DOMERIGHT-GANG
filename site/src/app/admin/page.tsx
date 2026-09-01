@@ -232,6 +232,8 @@ export default function AdminPage() {
             <label>
               <span>Email</span>
               <input
+                id="adminEmail"
+                name="email"
                 type="email"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
@@ -243,6 +245,8 @@ export default function AdminPage() {
             <label>
               <span>Password</span>
               <input
+                id="adminPassword"
+                name="password"
                 type="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
@@ -302,6 +306,8 @@ export default function AdminPage() {
       <section className={styles.toolbar}>
         <div className={styles.searchWrap}>
           <input
+            id="adminMemberSearch"
+            name="memberSearch"
             type="search"
             value={search}
             onChange={(event) => setSearch(event.target.value)}
@@ -347,6 +353,8 @@ export default function AdminPage() {
 
                 <div className={styles.cellInput}>
                   <input
+                    id={`memberFirstName-${member.id}`}
+                    name={`firstName-${member.id}`}
                     defaultValue={member.firstName}
                     onBlur={(event) => updateMemberField(member.id, "firstName", event.target.value)}
                   />
@@ -354,6 +362,8 @@ export default function AdminPage() {
 
                 <div className={styles.cellInput}>
                   <input
+                    id={`memberLastName-${member.id}`}
+                    name={`lastName-${member.id}`}
                     defaultValue={member.lastName}
                     onBlur={(event) => updateMemberField(member.id, "lastName", event.target.value)}
                   />
@@ -361,6 +371,8 @@ export default function AdminPage() {
 
                 <div className={styles.cellSelect}>
                   <select
+                    id={`memberRole-${member.id}`}
+                    name={`role-${member.id}`}
                     value={safeRole}
                     onChange={(event) => updateMemberRole(member.id, event.target.value as RoleOption)}
                     disabled={isSaving[member.id]}

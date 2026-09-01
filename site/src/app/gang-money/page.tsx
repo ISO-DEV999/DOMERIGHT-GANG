@@ -1886,6 +1886,8 @@ export default function GangMoneyPage() {
                                 −
                               </button>
                               <input
+                                id={`withdrawQuantity-${item.id}`}
+                                name={`withdrawQuantity-${item.id}`}
                                 type="text"
                                 inputMode="numeric"
                                 className={styles.inventoryCartQtyInput}

@@ -263,8 +263,8 @@ export default function MembersPage() {
           </div>
 
           <nav className={styles.navPillContainer} aria-label="Primary navigation">
-            <Link href="/members" prefetch={false} className={`${styles.navItem} ${styles.active}`}>MEMBERS</Link>
-            <Link href="/gang-money" prefetch={false} className={styles.navItem}>โทรศัพท์แก๊ง</Link>
+            <Link href="/members" className={`${styles.navItem} ${styles.active}`}>MEMBERS</Link>
+            <Link href="/gang-money" className={styles.navItem}>โทรศัพท์แก๊ง</Link>
           </nav>
 
           <div className={styles.navRight}>
@@ -289,6 +289,8 @@ export default function MembersPage() {
                   <path d="m16 16 4 4" />
                 </svg>
                 <input
+                  id="memberSearch"
+                  name="memberSearch"
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
                   placeholder="ค้นหาชื่อ, username หรือเบอร์..."
